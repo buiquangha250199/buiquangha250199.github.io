@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<link rel="stylesheet" href="../css/bootstrap.css">
+ 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+ 	<link rel="stylesheet" href="1.css">
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 	<script src="1.js"></script> 
+ 	<script src="js/bootstrap.js"></script>
+ 	<script type="text/javascript" src="wow_and_animate/wow.min.js"></script>
+ 	<link rel="stylesheet" href="wow_and_animate/animate.css">
+	<title>Game Lật Hình AOV</title>
+</head>
+<body>
+
+	<div class="bg">
+
+		<div class="fadebg"></div>		 	<!-- end nền xám --> 
+
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	  		<a class="navbar-brand" href="#">Lật bài Liên Quân</a>
+	  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+	  			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    		<span class="navbar-toggler-icon"></span>
+	  		</button>
+
+	  		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    		<ul class="navbar-nav mr-auto">
+	      			<li class="nav-item">
+	        			<a class="nav-link a_rules" href="#">RULES</span></a>
+	      			</li>
+	      			<li class="nav-item">
+	        			<a class="nav-link a_gameplay" href="#">PLAY GAME</a>
+	      			</li>
+	      			<li class="nav-item">
+	        			<a class="nav-link a_contact" href="#">CONTACT</a>
+	      			</li>
+	    		</ul>
+	  		</div>
+		</nav>			<!-- end menu -->
+
+		<div class="rules">
+			<div class="container">
+				<div class="row text-center">
+					<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+						<i class="fas fa-volume-off"></i>
+						<i class="fas fa-volume-up"></i>
+						
+						<audio controls loop id="audio">
+  							<source src="audio/After-the-Invasion.mp3" type="audio/mpeg">
+						</audio>
+					</div>
+					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+						<h1>Rules:</h1>
+						<h5>Có 32 tấm bài, đôi 1 giống nhau. Nhiệm vụ của bạn là giải mã những quân bài ấy trong thời gian quy định. Chúc may mắn!</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="progressBar">
+  			<div class="bar"></div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+					<button type="button" class="btn btn-warning">Play</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="gameplay">
+			<div class="container-fluid">
+				<div class="row8cards">
+					<div class="cards">
+						<div class="front">
+							<img id="n1" data-name="">
+						</div>
+						<div class="back">
+							<img src="imgs/skull.jpg">
+						</div>
+					</div>
+
+					<div class="cards">
+						<div class="front">
+							<img id="n2" data-name="">
+						</div>
+						<div class="back">
+							<img src="imgs/skull.jpg">
+						</div>
+					</div>
+
+					<div class="cards">
+						<div class="front">
+							<img id="n3" data-name="">
+						</div>
+						<div class="back">
+							<img src="imgs/skull.jpg">
+						</div>
+					</div>
+
+					<div class="cards">
+						<div class="front">
+							<img id="n4" data-name="">
+						</div>
+						<div class="back">
+							<img src="imgs/skull.jpg">
+						</div>
+					</div>
+
+					<div class="cards">
+						<div class="front">
+							<img id="n5" data-name="">
+						</div>
+						<div class="back">
+							<img src="imgs/skull.jpg">
+						</div>
+					</div>
+
+					<div class="cards">
+						<div class="front">
+							<img id="n6" data-name="">
+						</div>
+						<div class="back">
+							<img src="imgs/skull.jpg">
+						</div>
+					</div>
+
+					<div class="cards">
+						<div class="front">
+							<img id="n7" data-name="">
+						</div>
+						<div class="back">
+							<img src="imgs/skull.jpg">
+						</div>
+					</div>
+
+					<div class="cards">
+						<div class="front">
+							<img id="n8" data-name="">
+						</div>
+						<div class="back">
+							<img src="imgs/skull.jpg">
+						</div>
+					</div>
+				</div>
+
+				<div class="row8cards">
+					<div class="cards">
+						<div class="front">
+							<img id="n9" data-name="">
+						</div>
+						<div class="back">
+							<img src="imgs/skull.jpg">
+						</div>
+					</div>
+
+					<div class="cards">
+						<div class="front">
+							<img id="n10" data-name="">
+						</div>
+						<div class="back">
+							<img src="imgs/skull.jpg">
+						</div>
+					</div>
+
+					<div class="cards">
+						<div class="front">
+							<img id="n11" data-name="">
+						</div>
+						<div class="back">
+							<img src="imgs/skull.jpg">
+						</div>
+					</div>
+
+					<div class="cards">
+						<div class="front">
+							<img id="n12" data-name="">
+						</div>
+						<div class="back">
+							<img src="imgs/skull.jpg">
+						</div>
+					</div>
+
+					<div class="cards">
+						<div class="front">
+							<img id="n13" data-name="">
+						</div>
+						<div class="back">
+							<img src="imgs/skull.jpg">
+						</div>
+					</div>
+
+					<div class="cards">
+						<div class="front">
+							<img id="n14" data-name="">
+						</div>
+						<div class="back">
+							<img src="imgs/skull.jpg">
+						</div>
+					</div>
+
+					<div class="cards">
+						<div class="front">
+							<img id="n15" data-name="">
+						</div>
+						<div class="back">
+							<img src="imgs/skull.jpg">
+						</div>
+					</div>
+
+					<div class="cards">
+						<div class="front">
+							<img id="n16" data-name="">
+						</div>
+						<div class="back">
+							<img src="imgs/skull.jpg">
+						</div>
+					</div>
+				</div>
+
+				<div class="row8cards">
+					<div class="cards">
+						<div class="front">
+							<img id="n17" data-name="">
+						</div>
+						<div class="back">
+							<img src="imgs/skull.jpg">
+						</div>
+					</div>
+
+					<div class="cards">
+						<div class="front">
+							<img id="n18" data-name="">
+						</div>
+						<div class="back">
+							<img src="imgs/skull.jpg">
+						</div>
+					</div>
+
+					<div class="cards">
+						<div class="front">
+							<img id="n19" data-name="">
+						</div>
+						<div class="back">
+							<img src="imgs/skull.jpg">
+						</div>
+					</div>
+
+					<div class="cards">
+						<div class="front">
+							<img id="n20" data-name="">
+						</div>
+						<div class="back">
+							<img src="imgs/skull.jpg">
+						</div>
+					</div>
+
+					<div class="cards">
+						<div class="front">
+							<img id="n21" data-name="">
+						</div>
+						<div class="back">
+							<img src="imgs/skull.jpg">
+						</div>
+					</div>
+
+					<div class="cards">
+						<div class="front">
+							<img id="n22" data-name="">
+						</div>
+						<div class="back">
+							<img src="imgs/skull.jpg">
+						</div>
+					</div>
+
+					<div class="cards">
+						<div class="front">
+							<img id="n23" data-name="">
+						</div>
+						<div class="back">
+							<img src="imgs/skull.jpg">
+						</div>
+					</div>
+
+					<div class="cards">
+						<div class="front">
+							<img id="n24" data-name="">
+						</div>
+						<div class="back">
+							<img src="imgs/skull.jpg">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="contact">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+					<p class="needFix"> Contact us and we'll get back to you within 24 hours.</p>
+					<p><i class="fa fa-map-marker"></i> Thụy Phong,VN </p>
+					<p><i class="fa fa-phone"></i> 025.021.999 </p>
+					<p><i class="fa fa-envelope"></i> myemail@nothing.com </p>
+				</div>
+				<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
+				<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+					<h3 class="h3"> CONTACT US</h3>
+					<div>
+						<input type="text" placeholder=" Name"></input>
+						<input type="text" placeholder=" Email"></input>
+					</div>
+					<textarea class="form-control" id="comments" name="comments"
+							  placeholder=" Comment" rows="3"></textarea>
+					<button class="btn btn-default pull-right" type="submit">Send</button>
+				</div>
+			</div>
+		</div>   	
+	</div>
+
+	<div class="container text-center">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<h6> Made by Quang Ha Corp <i class="fa fa-trademark"></i></h6>
+			</div>
+		</div>
+	</div>
+
+	<div class="winBg"></div>
+
+	<div class="winGame">
+		<div class="container text-center">
+			<div class="row">
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+					<img src="imgs/troll2.gif">
+				</div>
+				<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+					<p>You win <i class="fas fa-smile-beam"></i></p>
+					<audio controls id="victory">
+  							<source src="audio/victory.mp3" type="audio/mpeg">
+					</audio>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<button class="restart">Restart</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="loseGame">
+		<div class="container text-center">
+			<div class="row">
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+					<img src="imgs/troll.gif">
+				</div>
+				<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+					<p>Failure <i class="fas fa-grin-tongue-wink"></i></p>
+					<audio controls id="lose">
+  							<source src="audio/laugh.mp3" type="audio/mpeg">
+					</audio>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<button class="restart">Restart</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

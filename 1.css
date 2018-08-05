@@ -1,0 +1,230 @@
+*{ margin: 0;padding: 0;}
+
+.bg {
+	height: 1000px;
+	width: 100%;
+    background-image: url("imgs/gif3.gif");
+    position: relative;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-size: cover;
+}
+
+.fadebg {
+	height: 1000px;
+	width: 100%;
+	position: absolute;
+	z-index: 0;
+	background-color: #00204624;
+}
+
+.changeColor {
+    background-color: #c56767;
+}
+
+a.navbar-brand {
+	padding-left:100px;
+	font-size:23px;
+	letter-spacing:3px;
+}
+
+
+div#navbarSupportedContent {
+    float: right;
+    letter-spacing: 2px;
+    padding-left: 520px;
+}
+
+nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
+    position: fixed;
+    z-index: 16;
+    width: 100%;
+    height: 55px;
+}
+
+.rules {
+    padding: 100px;
+    color: #80ff79;
+    text-shadow: 2px 2px #1d1111;
+}
+
+button.btn.btn-warning {
+    margin-top: -60px;
+    margin-bottom: 50px;
+    font-size: 21px;
+}
+
+i.fas.fa-volume-off {
+    font-size: 70px;
+    color: darkorange;
+    text-shadow: 2px 2px #000000;
+    cursor: pointer;
+}
+
+i.fas.fa-volume-up {
+	font-size: 70px;
+    color: darkorange;
+    text-shadow: 2px 2px #000000;
+    cursor: pointer;
+}
+
+.row8cards {
+	opacity: 0;
+    height: 170px;
+    padding: 10px 115px;
+}
+
+.progressBar {
+	opacity: 0;
+    width: 79%;
+    margin: -20px auto;
+    height: 22px;
+    background-color: lightgrey;
+}
+
+.progressBar div {
+  height: 100%;
+  text-align: right;
+  padding: 0 10px;
+  line-height: 22px; /* same as #progressBar height if we want text middle aligned */
+  width: 0;
+  background-color: #CBEA00;
+  box-sizing: border-box;
+}
+
+.showGame {
+	transition:1s;
+	opacity: 1;
+}
+
+.cards {
+    width: 115px;
+    height: 160px;
+    float: left;
+    margin: 0px 10.5px;
+    cursor: pointer;
+}
+
+img {
+	width: 120px;
+	height: 160px;
+}
+
+.cards .back{
+	z-index: 2;
+	position: absolute;
+	transition: 0.5s ease;
+	backface-visibility: hidden;
+}
+
+.cards .front {
+	z-index: 2;
+    transition: 0.5s ease-in;
+	transform:rotateY(0deg);
+	position: absolute;
+}
+
+.backFlip {
+    transform:rotateY(180deg);
+}
+
+.frontFlip {
+    transform:rotateY(180deg);
+}
+
+/* .cards:hover .front {
+    position: absolute;
+    transform:rotateY(0deg);
+    z-index: 2;
+}
+
+.cards:hover .back {
+    position: absolute;
+    transform:rotateY(180deg);
+    z-index: 2;
+}
+ */
+
+.form-control {
+    display: block;
+    width: 64%;
+    padding: 0rem 0rem;
+}
+
+.contact {
+    padding-top: 20px;
+    background-color: #fffacd4d;
+}
+
+audio {
+	opacity: 0;
+    visibility: hidden;
+}
+
+button.btn.btn-default.pull-right {
+    width: 53px;
+    height: 30px;
+    font-size: 14px;
+    margin-left: 288px;
+}
+
+.winGame {
+    width: 550px;
+    height: 280px;
+    margin: auto;
+    position: fixed;
+    background: linear-gradient(to top left, #33ccff 0%, #ff99cc 100%);
+    top: 21%;
+    padding: 20px 15px;
+    right: 29%;
+    z-index: 17;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loseGame {
+    width: 550px;
+    height: 280px;
+    margin: auto;
+    position: fixed;
+    background: linear-gradient(to top right, #33ccff 0%, #ff99cc 100%);
+    top: 21%;
+    padding: 20px 15px;
+    right: 29%;
+    z-index: 17;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.col-xs-8 p {
+    font-size: 65px;
+    color: darkslategrey;
+    visibility: hidden;
+    margin-top: 25px;
+}
+
+i.fas.fa-grin-tongue-wink {
+    /* column-fill: auto; */
+    color: darkred;
+}
+i.fas.fa-smile-beam {
+    color: darkred;
+}
+
+button.restart {
+    background-color: lavender;
+    color: green;
+    border-radius: 5px;
+    font-size: 22px;
+    width: 77px;
+    margin-top: -10px;
+
+}
+button.restart:hover{
+    font-size: 23px;
+    background-color:#e6e6fac2;
+}
+
+audio#victory {
+    margin-bottom: -25px;
+}
